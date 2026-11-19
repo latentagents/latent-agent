@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement to Latent Agent.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to accomplish?
+      description: Describe your workflow and the problem you encounter.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Explain how the feature would help.
+    validations:
+      required: true
