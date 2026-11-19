@@ -2,6 +2,12 @@
 
 Product changes recorded from the Latent Agent source releases. Live availability is determined by the hosted installation and its integration configuration.
 
+## 0.2.10 — 2026-11-19
+
+- Corrected the public client fetch receiver for browser usage and rendered reviewed execution records directly in page HTML.
+- Added $5 signup and $2 referral credit for eligible new verified accounts, with server-enforced campaign caps and credit-ledger accounting. Live availability depends on the hosted configuration.
+- Updated public navigation with GitHub and X brand marks.
+
 ## 0.2.9 — 2026-11-19
 
 - Added public database and worker-heartbeat status.

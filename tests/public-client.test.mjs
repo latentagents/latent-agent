@@ -35,3 +35,11 @@ test('client rejects insecure or ambiguous origins', () => {
   assert.throws(() => new LatentPublicClient({ origin: 'http://example.invalid' }), /HTTPS origin/);
   assert.throws(() => new LatentPublicClient({ origin: 'https://example.invalid/path' }), /HTTPS origin/);
 });
+
+test('preserves the native browser fetch receiver', async () => {
+  const client = new LatentPublicClient({ fetchImpl: async function (url) {
+    assert.equal(this, globalThis);
+    return Response.json({ available: url.endsWith('/demo') });
+  }});
+  assert.equal((await client.demo()).available, true);
+});

@@ -8,7 +8,9 @@ export class LatentPublicClient {
       throw new Error('Provide an HTTPS origin, or an HTTP localhost origin.');
     }
     this.origin = url.origin;
-    this.fetchImpl = fetchImpl;
+    // Browser fetch is a Window method; calling it with the client as `this`
+    // can throw "Illegal invocation". Preserve the native receiver.
+    this.fetchImpl = fetchImpl.bind(globalThis);
   }
 
   /** @param {string} path @param {string} [method] @param {string} [key] */
@@ -16,7 +18,7 @@ export class LatentPublicClient {
     const headers = new Headers({ Accept: 'application/json' });
     if (key) headers.set('Authorization', `Bearer ${key}`);
     const response = await this.fetchImpl(`${this.origin}/api/v1/${path}`, {
-      method, headers, cache: 'no-store', redirect: 'error', signal: AbortSignal.timeout(15000),
+      method, headers, cache: 'no-store', redirect: 'error', signal: typeof AbortSignal.timeout === 'function' ? AbortSignal.timeout(15000) : undefined,
     });
     const data = await response.json();
     // A 503 on a status endpoint can be a real, useful health reading.
