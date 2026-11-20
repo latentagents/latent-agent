@@ -2,6 +2,24 @@
 
 Product changes recorded from the Latent Agent source releases. Live availability is determined by the hosted installation and its integration configuration.
 
+## 0.2.13 — 2026-11-20
+
+- Recent work is placed above workspace tools, with quick search, expandable conversation history and an anchored account footer.
+- Responsive navigation and activity drawers avoid narrowing the chat panel on phones and tablets. Pending approvals remain visible from the conversation.
+- Added an adaptive, keyboard-aware composer, responsive dashboard layouts, and batched model directory rendering with full-catalog search.
+
+## 0.2.12 — 2026-11-20
+
+- Added support for InferHub marketplace ask ranges and correctly classified vision-capable chat models.
+- Hosted marketplace requests use explicit maximum unit-price bids, and usage settlement uses the reported provider cost when available.
+- Simplified the homepage hero; launch eligibility remains visible in signup and referral sections.
+
+## 0.2.11 — 2026-11-20
+
+- Added verified email linking for existing Privy wallet accounts without changing their workspace or balance.
+- Organic eligible signup credit remains $5; new eligible referred signups receive $8 and inviters receive $2, subject to campaign limits.
+- Added an authenticated InferHub model catalog sync, searchable directory, provider brand marks, and verified pricing. Non-chat models are shown separately; unverified rates cannot be used for credit-funded runs.
+
 ## 0.2.10 — 2026-11-19
 
 - Corrected the public client fetch receiver for browser usage and rendered reviewed execution records directly in page HTML.

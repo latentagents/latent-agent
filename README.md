@@ -12,7 +12,7 @@
 
 Latent provides a workspace in which you can give an AI agent a task, review its progress and work with the resulting files. Tasks run in the cloud, and application projects can be deployed with a dedicated address through the Cloud workspace.
 
-This repository contains public product documentation and the JavaScript client used by the Latent public demo. Model, hosting and integration availability depends on the live service configuration. The hosted workspace offers eligible new verified email/Google signups $5 in usage credit and existing members $2 for eligible referrals, subject to campaign limits. See [launch credits](docs/launch-credits.md).
+This repository contains public product documentation and the JavaScript client used by the Latent public demo. Model, hosting and integration availability depends on the live service configuration. The hosted workspace offers eligible new verified email/Google signups $5 in usage credit, or $8 with a valid referral; existing members receive $2 for eligible referrals. Wallet users can link a verified email for future referral rewards. See [launch credits](docs/launch-credits.md) and [live models & prices](https://latentagents.xyz/models).
 
 ## Try the JavaScript client
 
