@@ -1,6 +1,6 @@
 {
   "name": "@latentagents/public-client",
-  "version": "0.2.13",
+  "version": "0.2.16",
   "private": true,
   "type": "module",
   "description": "JavaScript client for Latent Agent public status, demo receipts and trial API",

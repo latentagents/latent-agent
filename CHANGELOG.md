@@ -2,6 +2,23 @@
 
 Product changes recorded from the Latent Agent source releases. Live availability is determined by the hosted installation and its integration configuration.
 
+## 0.2.16 — 2026-11-20
+
+- Grouped matching hosted model aliases into one card, retaining the exact provider route, availability and price for each option. Available chat models are shown by default.
+- Clarified provider readiness and generation history in Media. Added an email-verification action for wallet-only referral accounts, consistent resource headings, higher text contrast and clearer run history navigation.
+- Moved pending action reviews directly into the conversation and to the top of Activity, with previous decisions collapsed into a separate history. Execution permissions and approval requirements are unchanged.
+
+## 0.2.15 — 2026-11-20
+
+- Cleaned the homepage hero, widened its headline, and added locally rendered interactive contours that react to pointer movement and taps.
+- Added sticky public navigation, anchor offsets and mobile menu dismissal. Motion runs only while needed and respects reduced-motion preferences.
+
+## 0.2.14 — 2026-11-20
+
+- Unified the phone and tablet workspace header and replaced the oversized welcome view with compact task shortcuts.
+- Added a one-row, growing composer with model selection, visible run budget and a dedicated credit source panel. Model search no longer opens the mobile keyboard automatically.
+- Refined short laptop layouts and preserved conversation export, branching, Recent Work, activity and approval access.
+
 ## 0.2.13 — 2026-11-20
 
 - Recent work is placed above workspace tools, with quick search, expandable conversation history and an anchored account footer.
